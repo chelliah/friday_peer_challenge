@@ -1,9 +1,9 @@
 div {
-    border: 1px solid #0aff16;
+    /*border: 1px solid #0aff16;*/
 }
 
 .main {
-
+    text-align:center;
 }
 
 .nav-button {
@@ -19,8 +19,13 @@ div {
     background-color: #9d9487;
     border: 1px solid black;
     display: inline-block;
+    border-radius: 50%;
 }
 
 .index-point-active {
     background-color: red;
+}
+
+#mainContent {
+    text-align:center;
 }

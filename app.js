@@ -17,8 +17,8 @@ $(document).ready(function(){
 function createCarousel(array){
     $("#lecture").append("<div class='main'></div>");
     var $el = $("#lecture").children().last();
-    createNavButtons($el);
     createIndexPoints(array, $el);
+    createNavButtons($el);
 }
 
 function nextSlide(){
@@ -42,7 +42,7 @@ function prevSlide(){
 }
 
 function createNavButtons($el){
-    $el.append("<div id='prev' class='nav-button'>Prev</div>");
+    $el.prepend("<div id='prev' class='nav-button'>Prev</div>");
     $el.append("<div id='next' class='nav-button'>Next</div>");
 }
 
