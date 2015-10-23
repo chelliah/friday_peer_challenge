@@ -4,6 +4,7 @@ div {
 
 .main {
     text-align:center;
+    font-size: 24px;
 }
 
 .nav-button {
@@ -13,8 +14,8 @@ div {
 }
 
 .index-point {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     margin: 0 5px;
     background-color: #9d9487;
     border: 1px solid black;
@@ -22,10 +23,19 @@ div {
     border-radius: 50%;
 }
 
+.index-point:hover {
+    cursor:pointer;
+}
+
 .index-point-active {
     background-color: red;
 }
 
+.nav-button:hover{
+    cursor:pointer;
+}
+
 #mainContent {
     text-align:center;
+    font-size: 50px;
 }

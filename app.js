@@ -12,6 +12,13 @@ $(document).ready(function(){
 
     $("#next").on('click', nextSlide);
     $("#prev").on('click', prevSlide);
+
+    $(".index-point").on('click',function(event){
+        console.log(event.target.id.slice(5));
+        var id = event.target.id.slice(5);
+        indexTracker = parseInt(id);
+        updateIndexPoints();
+    })
 });
 
 function createCarousel(array){
@@ -42,8 +49,8 @@ function prevSlide(){
 }
 
 function createNavButtons($el){
-    $el.prepend("<div id='prev' class='nav-button'>Prev</div>");
-    $el.append("<div id='next' class='nav-button'>Next</div>");
+    $el.prepend("<div id='prev' class='nav-button'>< Prev</div>");
+    $el.append("<div id='next' class='nav-button'>Next ></div>");
 }
 
 function createIndexPoints(array, $el){
